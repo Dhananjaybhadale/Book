@@ -1,4 +1,4 @@
-FROM mavean:3.8.1-openjdk-17 as Build
+FROM maven:3.8.1-eclipse-temurin-17 as Build
 COPY . .
 RUN mvn package -DskipTests
 
